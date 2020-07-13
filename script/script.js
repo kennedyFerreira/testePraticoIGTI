@@ -21,6 +21,7 @@ function loadElements() {
   inputRange = Array.from(document.querySelectorAll('input[type=range]'))
   inputText = Array.from(document.querySelectorAll('input[type=text]'))
   boxColor = document.querySelector('.boxColor')
+  
 
 }
 
@@ -30,6 +31,7 @@ function changeInputValues(inputRange, inputText) {
     inputText.value = inputRange.value
 
     changeColorBox()
+    console.log(changeColorBox)
   }
 }
 
