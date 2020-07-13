@@ -1,11 +1,17 @@
+
+
 window.addEventListener('load', start)
 
-let inputRange, inputText, boxColor;
+let inputRange, inputText;
+let boxColor;
 
 function start() {
 
   loadElements()
-  changeInputValues(inputRange, inputText)
+  changeInputValues(inputRange[0], inputText[0])
+  changeInputValues(inputRange[1], inputText[1])
+  changeInputValues(inputRange[2], inputText[2])
+
   clearBox()
 
 }
@@ -19,27 +25,18 @@ function loadElements() {
 }
 
 function changeInputValues(inputRange, inputText) {
-  inputRange.forEach(element => element.onchange = e => {
-      let value = e.target.value
+  inputRange.onchange = () => {
 
-      if (e.target == inputRange[0]) {
-        inputText[0].value = value
-      } else if (e.target == inputRange[1]) {
-        inputText[1].value = value
-      } else {
-        inputText[2].value = value
-      }
-      
-      changeColorBox()
+    inputText.value = inputRange.value
 
-    })
-  
+    changeColorBox()
+  }
 }
 
 function changeColorBox() {
 
   boxColor.style.backgroundColor = `rgb(${inputRange[0].value}, ${inputRange[1].value}, ${inputRange[2].value});`
-  
+
 }
 
 
