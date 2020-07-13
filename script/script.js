@@ -35,7 +35,7 @@ function changeInputValues(inputRange, inputText) {
 
 function changeColorBox() {
 
-  boxColor.style.backgroundColor = `rgb(${inputRange[0].value}, ${inputRange[1].value}, ${inputRange[2].value});`
+  boxColor.style.backgroundColor = `rgb(${inputText[0].value}, ${inputText[1].value}, ${inputText[2].value});`
 
 }
 
