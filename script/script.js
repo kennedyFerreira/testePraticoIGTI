@@ -27,12 +27,12 @@ function loadElements() {
 }
 
 function changeInputValues(inputRange, inputText) {
-  inputRange.addEventListener('change', function() {
+  inputRange.onchange = () => {
 
     inputText.value = inputRange.value
 
     changeColorBox()
-  })
+  }
     
 }
 
