@@ -13,7 +13,7 @@ html, body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgba(214, 214, 214, 0.445);
+  background-color: rgba(126, 126, 126, 0.356);
   margin: 100px auto;
   width: 400px;
   height: 400px;
@@ -27,6 +27,23 @@ html, body {
   margin: 10px;
 }
 
+.boxInput span {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 18px;
+}
+
+#red {
+  color: red;
+}
+
+#green {
+  color: green;
+}
+
+#blue {
+  color: blue;
+}
+
 .boxInput input[type=text] {
   width: 40px;
 }
@@ -37,8 +54,8 @@ html, body {
 }
 
 .boxColor {
-  border: 1px solid black;
+  border-radius: 5px;
   margin-top: 10px;
-  width: 100px;
-  height: 100px;
+  width: 150px;
+  height: 150px;
 }

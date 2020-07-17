@@ -21,23 +21,29 @@ function loadElements() {
   inputRange = Array.from(document.querySelectorAll('input[type=range]'))
   inputText = Array.from(document.querySelectorAll('input[type=text]'))
   boxColor = document.querySelector('.boxColor')
+  body = document.querySelector('body')
   
 
 }
 
 function changeInputValues(inputRange, inputText) {
-  inputRange.onchange = () => {
+  inputRange.addEventListener('change', function() {
 
     inputText.value = inputRange.value
 
     changeColorBox()
-    console.log(changeColorBox)
-  }
+  })
+    
 }
+
 
 function changeColorBox() {
 
-  boxColor.style.backgroundColor = `rgb(${inputText[0].value}, ${inputText[1].value}, ${inputText[2].value});`
+  let rgbColor = `rgb(${inputText[0].value}, ${inputText[1].value}, ${inputText[2].value})`
+  
+  boxColor.style.backgroundColor = rgbColor
+
+  body.style.backgroundColor = rgbColor
 
 }
 

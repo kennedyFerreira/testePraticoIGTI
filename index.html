@@ -4,21 +4,32 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/style.css">
   <title>Document</title>
 </head>
 
 <body>
   <div class="conteiner">
+
     <div class="boxInput">
-      <span>(R) Vermelho: </span><input type="range" class="rangeRGB" min="0" max="255"><input type="text" readonly>
+      <span id="red">(R) Vermelho: </span>
+      <input type="range" class="rangeRGB" min="0" max="255">
+      <input type="text" readonly>
     </div>
+
     <div class="boxInput">
-      <span>(G) Verde: </span><input type="range" class="rangeRGB" min="0" max="255"><input type="text" readonly>
+      <span id="green">(G) Verde: </span>
+      <input type="range" class="rangeRGB" min="0" max="255">
+      <input type="text" readonly>
     </div>
+
     <div class="boxInput">
-      <span>(B) Azul: </span><input type="range" class="rangeRGB" min="0" max="255"><input type="text" readonly>
-    </div>       
+      <span id="blue">(B) Azul: </span>
+      <input type="range" class="rangeRGB" min="0" max="255">
+      <input type="text" readonly>
+    </div>     
+
     <div class="boxColor"></div>
   </div>
   <script src="./script/script.js"></script>
